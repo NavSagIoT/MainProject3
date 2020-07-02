@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_start">
+
+    <fragment
+        android:id="@+id/fragment_start"
+        android:name="com.example.mainproject3.fragment_start"
+        android:label="layout_start"
+        tools:layout="@layout/layout_start" >
+        <action
+            android:id="@+id/action_fragment_start_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_start_to_fragment_signup"
+            app:destination="@id/fragment_signup" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.mainproject3.fragment_login"
+        android:label="layout_login"
+        tools:layout="@layout/layout_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_menu"
+            app:destination="@id/fragment_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_signup"
+        android:name="com.example.mainproject3.fragment_signup"
+        android:label="layout_signup"
+        tools:layout="@layout/layout_signup" >
+        <action
+            android:id="@+id/action_fragment_signup_to_fragment_login"
+            app:destination="@id/fragment_login"
+            app:popUpTo="@id/fragment_start" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_menu"
+        android:name="com.example.mainproject3.fragment_menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/layout_menu" >
+        <argument
+            android:name="absd"
+            app:argType="integer" />
+        <argument
+            android:name="currentuser"
+            app:argType="com.google.firebase.auth.FirebaseUser" />
+    </fragment>
+</navigation>

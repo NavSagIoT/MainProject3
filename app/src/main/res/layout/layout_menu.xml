@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_menu">
+
+    <Switch
+        android:id="@+id/btn_menu1"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/fan0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/btn_menu2"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/led0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu1" />
+
+    <Switch
+        android:id="@+id/btn_menu3"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/led1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu2" />
+
+    <Switch
+        android:id="@+id/btn_menu4"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/led2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu3" />
+
+    <Switch
+        android:id="@+id/btn_menu5"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/led3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

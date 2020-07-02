@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MainProject3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="full_name">full_name</string>
+    <string name="email">email</string>
+    <string name="welocome_to_the_main_menu">Welocome to the Main Menu</string>
+    <string name="fan0">Fan0</string>
+    <string name="led2">LED2</string>
+    <string name="led0">LED0</string>
+    <string name="led1">LED1</string>
+    <string name="led3">LED3</string>
+</resources>
